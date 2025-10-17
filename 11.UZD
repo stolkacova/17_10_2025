@@ -1,2 +1,6 @@
 with open(Dzejolis.txt) as f:
-  print(f.read())
+   rindas = f.readlines()
+
+for i in range(len(rindas)):
+   print (f"{i+1}: {rindas[i].strip()}")
+   i += 1
