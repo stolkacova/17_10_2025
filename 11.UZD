@@ -1,6 +1,29 @@
-with open(Dzejolis.txt) as f:
+# 11 uzd.
+
+with open(Dzejolis.txt, "r", encoding="utf-8") as f:
    rindas = f.readlines()
 
 for i in range(len(rindas)):
    print (f"{i+1}: {rindas[i].strip()}")
    i += 1
+# 12.uzd
+ with open(teksts.txt, "r", encoding="utf-8") as f:
+   vardi = f.read()
+cik = vardi.split()
+print ("Vārdu skaits ir:", len(cik))
+
+# 13.uzd
+
+with open(kontakti.txt, "r", encoding="utf-8") as f:
+   names = f.readlines()
+
+for i in range(len(names)):
+   print (f"{i+1}: {names[i].strip()}")
+   i += 1
+
+karta = names.split()
+
+# vajag, lai input datnes saglabājas un tika radīti 
+
+thislist = input()
+telefoni = [x for x in thislist if int in x]
